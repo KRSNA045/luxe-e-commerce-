@@ -1,0 +1,80 @@
+.account-page { min-height: 100vh; padding: 7rem 0 4rem; }
+
+.account-auth-prompt {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: 0.75rem; padding: 5rem 2rem; color: var(--text-muted);
+}
+.account-auth-prompt svg { opacity: 0.3; }
+.account-auth-prompt h2 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; color: var(--text-primary); }
+.account-auth-prompt p { font-size: 0.9rem; }
+
+.account-header {
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: 2rem; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); margin-bottom: 2.5rem;
+}
+
+.account-avatar {
+  width: 64px; height: 64px;
+  background: var(--accent-gold-dim); border: 1px solid var(--border-strong);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 1.5rem; color: var(--accent-gold); flex-shrink: 0;
+}
+
+.account-name { font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; color: var(--text-primary); }
+.account-email { font-size: 0.83rem; color: var(--text-muted); margin-top: 0.2rem; }
+.account-logout { margin-left: auto; display: flex; align-items: center; gap: 0.4rem; }
+
+.account-section { }
+.account-section-title {
+  display: flex; align-items: center; gap: 0.75rem;
+  font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.account-empty {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 1rem; padding: 3rem; text-align: center; color: var(--text-muted);
+}
+.account-empty svg { opacity: 0.3; }
+
+.orders-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.order-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); overflow: hidden;
+}
+
+.order-card__header {
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.order-card__id { font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; color: var(--accent-gold); }
+.order-card__date { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+.order-card__status {
+  font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600;
+  color: #2ecc71; background: rgba(46,204,113,0.1); border: 1px solid rgba(46,204,113,0.25);
+  padding: 0.3rem 0.75rem; border-radius: 100px;
+}
+
+.order-card__total {
+  margin-left: auto;
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; color: var(--text-primary);
+}
+
+.order-card__items { padding: 1rem 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+
+.order-card__item { display: flex; gap: 0.75rem; align-items: center; }
+.order-card__item img { width: 48px; height: 48px; object-fit: cover; border-radius: var(--radius); background: var(--bg-elevated); }
+
+.order-card__item-title { font-size: 0.83rem; color: var(--text-primary); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.order-card__item-meta { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+.order-card__footer {
+  display: flex; gap: 2rem; flex-wrap: wrap;
+  padding: 1rem 1.5rem; border-top: 1px solid var(--border);
+  background: var(--bg-elevated); font-size: 0.78rem; color: var(--text-muted);
+}
